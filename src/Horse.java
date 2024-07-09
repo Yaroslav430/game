@@ -13,7 +13,7 @@ public class Horse extends ChessPiece {
         if (checkPos(line) && checkPos(column) && checkPos(toLine) && checkPos(toColumn)) {
             if (line != toLine && column != toColumn && (chessBoard.board[toLine][toColumn] == null ||
                     !chessBoard.board[toLine][toColumn].color.equals(this.color)) &&
-                    chessBoard.board[line][column] != null) {                                          
+                    chessBoard.board[line][column] != null) {
                 if (!chessBoard.board[line][column].equals(this)) {
                     return false;
                 }
